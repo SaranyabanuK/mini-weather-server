@@ -21,3 +21,51 @@ A beginner-friendly Express.js project that demonstrates core backend concepts s
 
 ```bash
 git clone https://github.com/SaranyabanuK/mini-weather-server.git
+
+Usage
+Start the server in development mode (auto restarts on file changes):
+
+bash
+Copy
+Edit
+npm run dev
+Or start normally:
+
+bash
+Copy
+Edit
+npm start
+Open your browser and visit:
+
+arduino
+Copy
+Edit
+http://localhost:3000
+Click the city buttons on the home page to fetch weather info.
+
+API Endpoints
+GET /weather?city=CityName
+Returns weather data for the specified city (case-insensitive).
+
+POST /weather/add
+Placeholder route — currently returns a "feature not supported" message.
+
+Project Structure
+bash
+Copy
+Edit
+mini-weather-server/
+├── app.js             # Main Express app with middleware and home route
+├── data/
+│   └── weather.js     # Mock weather data
+├── routes/
+│   └── weatherRoutes.js # Express Router handling /weather endpoints
+├── package.json       # Project metadata and scripts
+└── README.md          # Project documentation
+License
+This project is licensed under the ISC License.
+
+Author
+Saranya B.
+
+
